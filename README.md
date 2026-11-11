@@ -20,6 +20,10 @@ js-ts-learn/
 ├── package.json              # 项目配置与脚本
 ├── tsconfig.json             # TypeScript 编译配置(strict 模式)
 ├── run-all.ts                # 依次运行所有示例
+├── docs/                     # 学习问答笔记(课程的补充资料)
+│   ├── typeof-and-type-erasure.md     # 01 课:typeof 与类型擦除
+│   ├── bigint-literal-compilation.md  # 02 课:BigInt 字面量的编译结果
+│   └── record-utility-type.md         # 03 课:Record 工具类型
 ├── .vscode/
 │   └── launch.json           # VSCode 调试配置(tsx 调试当前文件)
 └── src/
