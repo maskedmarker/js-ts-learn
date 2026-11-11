@@ -80,13 +80,16 @@ console.log(format(100));
 console.log('');
 
 // === 解构参数 ===
-// 解构参数的注解要写整体对象类型
+// 解构参数的注解要写整体对象类型(注意是整体的类型信息,不能缺少属性)
 function createPoint({ x, y }: { x: number; y: number }): { x: number; y: number } {
   return { x, y };
 }
 const p = createPoint({ x: 1, y: 2 });
 console.log('point:', p);
 console.log('');
+
+// Object literal may only specify known properties, and 'z' does not exist in type '{ x: number; y: number; }'
+// const p2 = createPoint({ x: 1, y: 2, z: 3 });   // ❌ 参数类型错误
 
 // === 坑汇总 ===
 // 1. 可选参数(?)必须排在必选参数之后
