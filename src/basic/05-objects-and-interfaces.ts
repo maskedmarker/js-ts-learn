@@ -77,9 +77,9 @@ console.log('');
 // type 更灵活:可以写联合类型、交叉类型等
 type ID = string | number;
 type Point = { x: number; y: number };
-type NamedPoint = Point & { name: string };    // 交叉类型:合并两个形状
+type NamedPoint = Point & { id: ID };    // 交叉类型:合并两个形状
 
-const np: NamedPoint = { x: 1, y: 2, name: 'P1' };
+const np: NamedPoint = { x: 1, y: 2, id: 1 };
 console.log('np:', np);
 const id: ID = 'abc-123';
 console.log('id:', id);
