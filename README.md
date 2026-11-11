@@ -42,7 +42,9 @@ js-ts-learn/
     │   └── 12-async-await.ts             # 异步类型:Promise<T>、并发、错误收窄
     └── import/                      # 模块专题(子目录,带演示模块)
         ├── 13-modules.ts            # import/export、import type、桶文件、动态导入
-        └── modules/                 # 被 13-modules.ts 导入的示例模块
+        ├── 14-declare.ts            # declare 声明:给无类型三方库写 .d.ts
+        ├── modules/                 # 被 13-modules.ts 导入的示例模块
+        └── legacy-lib/              # 模拟的无类型三方库(.js + 我们写的 .d.ts)
 ```
 
 ## 使用方法
@@ -62,6 +64,7 @@ npm run classes      # 10 类
 npm run utilities    # 11 工具类型
 npm run async        # 12 异步编程
 npm run modules      # 13 模块系统
+npm run declare      # 14 declare 声明
 
 # 依次运行所有示例
 npm run all
@@ -85,6 +88,7 @@ npm run typecheck
 11. `basic/11-utility-types.ts` — Partial/Required/Readonly/Pick/Omit/Record/ReturnType/Parameters/Awaited/Exclude/Extract/NonNullable
 12. `basic/12-async-await.ts` — Promise<T>、await 拆箱、并发、错误收窄、泛型请求
 13. `import/13-modules.ts` — 命名/默认/重命名/import type/桶文件/副作用/动态导入
+14. `import/14-declare.ts` — declare 声明:给无类型三方库写 .d.ts(常量/函数/重载/类/接口),同名 .d.ts 自动配对,声明即承诺
 
 ## 关键提示
 

@@ -19,6 +19,7 @@ const lessons = [
   'basic/11-utility-types.ts',
   'basic/12-async-await.ts',
   'import/13-modules.ts',
+  'import/14-declare.ts',
 ];
 
 console.log('=== TypeScript 学习 - 全部示例 ===');

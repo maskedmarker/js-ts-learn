@@ -18,6 +18,7 @@
     "utilities": "tsx src/basic/11-utility-types.ts",
     "async": "tsx src/basic/12-async-await.ts",
     "modules": "tsx src/import/13-modules.ts",
+    "declare": "tsx src/import/14-declare.ts",
     "typecheck": "tsc --noEmit",
     "all": "tsx run-all.ts"
   },
