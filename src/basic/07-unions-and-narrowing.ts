@@ -23,6 +23,9 @@ printId(100);
 console.log('');
 
 // === in 收窄:判断属性是否存在 ===
+// 无入参时,不能写成(void) => string 
+// 因为 函数类型签名的参数表 ( ... ) 里写的是参数名（可带类型注解），不是类型本身
+// 当然也可以这样实现: (arg?: void) => string
 type Bird = { fly: () => string };
 type Fish = { swim: () => string };
 

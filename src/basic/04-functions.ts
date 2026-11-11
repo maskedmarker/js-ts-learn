@@ -68,6 +68,14 @@ function applyOperation(a: number, b: number, op: MathOperation): number {
 console.log('applyOperation(6, 3, multiply):', applyOperation(6, 3, multiply));
 console.log('');
 
+// 函数没有返回值时,可以使用 void 类型
+function logMessage(message: string): void {
+  console.log(`Log: ${message}`);
+}
+logMessage('This is a log message.');
+console.log('');
+
+
 // === 函数重载 ===
 // 同一函数、多组签名:不同参数 -> 不同返回值
 function format(value: string): string;
