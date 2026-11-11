@@ -1,0 +1,40 @@
+{
+  "name": "hello-typescript",
+  "version": "1.0.0",
+  "description": "TypeScript 语法学习项目 - Node.js 环境",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/basic/01-typescript-basics.ts",
+    "basics": "tsx src/basic/01-typescript-basics.ts",
+    "primitives": "tsx src/basic/02-primitive-types.ts",
+    "inference": "tsx src/basic/03-type-inference.ts",
+    "functions": "tsx src/basic/04-functions.ts",
+    "objects": "tsx src/basic/05-objects-and-interfaces.ts",
+    "arrays": "tsx src/basic/06-arrays-and-tuples.ts",
+    "unions": "tsx src/basic/07-unions-and-narrowing.ts",
+    "enums": "tsx src/basic/08-enums.ts",
+    "generics": "tsx src/basic/09-generics.ts",
+    "classes": "tsx src/basic/10-classes.ts",
+    "utilities": "tsx src/basic/11-utility-types.ts",
+    "async": "tsx src/basic/12-async-await.ts",
+    "modules": "tsx src/import/13-modules.ts",
+    "typecheck": "tsc --noEmit",
+    "all": "tsx run-all.ts"
+  },
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "learning",
+    "tsx"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "tsx": "^4.19.0",
+    "@types/node": "^22.9.0"
+  }
+}

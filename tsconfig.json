@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    // 目标 JS 版本(tsx 运行时直接支持,此选项主要影响类型检查)
+    "target": "ES2022",
+    // 模块体系:ESNext + Bundler 解析,允许省略扩展名 import,tsx 完全兼容
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    // 强制每个文件都是独立模块(与 "type": "module" + tsx 运行方式一致)
+    // 否则无 import/export 的课程文件会被当作全局脚本,跨文件变量互相冲突
+    "moduleDetection": "force",
+    "lib": ["ES2022"],
+
+    // === 严格模式:TS 的核心价值,建议全部开启 ===
+    "strict": true,
+
+    // 文件大小写一致性(Windows/macOS 开发互不踩坑)
+    "forceConsistentCasingInFileNames": true,
+
+    // 跳过第三方 .d.ts 的检查,大幅提速
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+
+    // 不产出编译文件,tsx 直接运行 .ts;发布时再改成真正的 outDir 构建
+    "noEmit": true,
+
+    // 全局类型:让 node:path / node:url 等 Node API 有类型提示
+    "types": ["node"]
+  },
+  "include": ["src/**/*", "run-all.ts"]
+}
