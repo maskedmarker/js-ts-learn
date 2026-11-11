@@ -27,6 +27,7 @@ export declare class Calculator {
 export declare function createCalculator(initialValue?: number): Calculator;
 
 // === 纯类型也可以放进声明文件,供消费方 import type ===
+// declare是用来声明已实现的三方实现的签名,而这里自己声明的类型信息,所以不用declare,直接 export 即可
 export interface MathToolsConfig {
   precision: number;
   mode: 'scientific' | 'standard';
